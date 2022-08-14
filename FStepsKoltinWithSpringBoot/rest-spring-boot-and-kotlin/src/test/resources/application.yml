@@ -1,19 +1,17 @@
 cors:
-  originPatterns: http://localhost:3000,http://localhost:8080,http://erudio.com.br
-
+  originPatterns: http://localhost:3000,http://localhost:8080,http://pedro.com.br
+server:
+  port: 8888
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/rest_with_spring_boot_pedro?useTimezone=true&serverTimezone=UTC
-    username: root
-    password: admin123
   jpa:
     hibernate:
       ddl-auto: none
+    show-sql: false
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect
-    show-sql: false
 spring-doc:
   paths-to-match:
     - /**/v1/**
